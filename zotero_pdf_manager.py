@@ -5,11 +5,11 @@ import shutil
 import os
 import sys
 
-# black_listed
-# The nice thing is I have a list of 
+
+# This is a really really quick and dirty script for copying my current attachments to a nicely structed directory
 
 delete_old_dir = False
-save_location = "/Users/Matt/Desktop/tmp"
+save_location = "/Users/Matt/Google Drive/zotero_papers"
 paper_storage_location = "/Users/Matt/Zotero/storage"
 paper_annotated_storagel_location = "/Users/Matt/Google Drive/annotated/"
 sqlite_file = "/Users/Matt/Zotero/zotero.sqlite"
