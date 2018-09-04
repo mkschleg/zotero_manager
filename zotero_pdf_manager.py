@@ -1,5 +1,6 @@
 #!/Users/Matt/.ve/general/bin/python
-"""Shell script for copying papers in a zotero database to a desired location (usually a cloud service)"""
+"""Shell script for copying papers in a zotero database
+to a desired location (usually a cloud service)"""
 import sqlite3
 import shutil
 import os
@@ -48,7 +49,7 @@ def get_schema(cursor):
     return schema_dict
 
 def copy_file_to_location(src, dest, to_overwrite=False):
-    """Handy function fro copying file to location and checking if to overwrite"""
+    """Handy function for copying file to location and checking if to overwrite"""
     if os.path.isfile(dest) and not to_overwrite:
         return
     shutil.copyfile(src, dest)
