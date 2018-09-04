@@ -6,7 +6,7 @@ import os
 
 # CHANGE THESE TO FIT YOUR NEEDS!!!
 ## Where you want your new directory to be
-SAVE_LOCATION = "/Users/Matt/Desktop/tmp"
+SAVE_LOCATION = "/Users/Matt/Google Drive/zotero_papers"
 ## Where your sqlite database is located
 SQLITE_FILE = "/Users/Matt/Zotero/zotero.sqlite"
 ## Where your attachments are located
@@ -138,6 +138,7 @@ def main():
         else:
             raise NameError("Told not to delete location directory AND not to update in place")
     else:
+        in_place_update = False
         os.makedirs(save_location)
         print("Directory Created")
 
